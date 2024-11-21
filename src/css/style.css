@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Hanken Grotesk", sans-serif;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .card {
+    max-width: 750px;
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 11px 11px 40px -20px #000;
+}
+
+
+
+.card .result {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    padding: 35px 50px 50px;
+    background: linear-gradient(to bottom,
+            var(--color-start, var(--Light-slate-blue)),
+            var(--color-end, var(--Light-royal-blue)));
+    text-align: center;
+}
+
+.card .result .title-result {
+    margin-bottom: 30px;
+    font-size: 2.2rem;
+    font-weight: 500;
+    letter-spacing: .8px;
+    color: var(--Pale-blue);
+}
+
+.card .result .score {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 35px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom,
+            var(--color-start, var(--Persian-blue)),
+            var(--color-end, var(--Violet-blue)));
+}
+
+.card .result .score p:first-child {
+    font-size: 7rem;
+    font-weight: 800;
+    color: var(--White);
+}
+
+.card .result .score p:last-child {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--Light-lavender)
+}
+
+.card .result .results {
+    margin-bottom: 15px;
+    font-size: 3.1rem;
+    font-weight: 700;
+    color: var(--White);
+}
+
+.card .result .info {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--Pale-blue);
+}
+
+
+
+.card .summary {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 35px 40px 45px;
+}
+
+.card .summary .summary-title {
+    margin-right: auto;
+    padding-bottom: 25px;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--Dark-gray-blue);
+}
+
+.card .summary .summary-list {
+    width: 100%;
+}
+
+.card .summary .summary-list .summary-item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 7px 7px 15px -10px #00000075;
+    padding: 15px 18px;
+}
+
+.card .summary .summary-list .summary-item.item-reaction {
+    background-color: var(--Light-red-clear);
+}
+
+.card .summary .summary-list .summary-item.item-memory {
+    background-color: var(--Orangey-yellow-clear);
+}
+
+.card .summary .summary-list .summary-item.item-verbal {
+    background-color: var(--Green-teal-clear);
+}
+
+.card .summary .summary-list .summary-item.item-visual {
+    background-color: var(--Cobalt-blue-clear);
+    margin-bottom: 40px;
+}
+
+.card .summary .summary-list .summary-item .skill-area {
+    display: flex;
+}
+
+.card .summary .summary-list .summary-item .skill-area p {
+    padding-left: 10px;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.card .summary .summary-list .summary-item.item-reaction .skill-area p {
+    color: var(--Light-red);
+}
+
+.card .summary .summary-list .summary-item.item-memory .skill-area p {
+    color: var(--Orangey-yellow);
+}
+
+.card .summary .summary-list .summary-item.item-verbal .skill-area p {
+    color: var(--Green-teal);
+}
+
+.card .summary .summary-list .summary-item.item-visual .skill-area p {
+    color: var(--Cobalt-blue);
+}
+
+.card .summary .summary-list .summary-item .result-values {
+    font-size: 1.7rem;
+    color: hsla(0, 0%, 50%, 0.801);
+    font-weight: 700;
+}
+
+strong {
+    color: var(--Dark-gray-blue);
+    font-weight: 800;
+}
+
+
+
+.card .summary .btn {
+    width: 100%;
+    border-radius: 30px;
+    padding: 16px 0;
+    background-color: var(--Dark-gray-blue);
+    text-align: center;
+    color: var(--White);
+    transition: 0.3s ease-in-out;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.card .summary .btn:hover {
+    background: linear-gradient(to bottom,
+            var(--color-start, var(--Persian-blue)),
+            var(--color-end, var(--Light-royal-blue)));
+}
